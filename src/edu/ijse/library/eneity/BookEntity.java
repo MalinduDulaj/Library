@@ -12,15 +12,15 @@ public class BookEntity {
     private int bookId;
     private String title;
     private String author;
-    private int publication_year;
+    private String isbn;
     private BookCategoryEntity category;
     private int availablecopies;
 
-    public BookEntity(int bookId, String title, String author, int publication_year, BookCategoryEntity category, int availablecopies) {
+    public BookEntity(int bookId, String title, String author, String isbn, BookCategoryEntity category, int availablecopies) {
         this.bookId = bookId;
         this.title = title;
         this.author = author;
-        this.publication_year = publication_year;
+        this.isbn= isbn;
         this.category = category;
         this.availablecopies = availablecopies;
     }
@@ -37,8 +37,8 @@ public class BookEntity {
         return author;
     }
 
-    public int getPublication_year() {
-        return publication_year;
+    public String getisbn() {
+        return isbn;
     }
 
     public BookCategoryEntity getCategory() {
@@ -61,8 +61,8 @@ public class BookEntity {
         this.author = author;
     }
 
-    public void setPublication_year(int publication_year) {
-        this.publication_year = publication_year;
+    public void setIsbn(String isbn) {
+        this.isbn = isbn;
     }
 
     public void setCategory(BookCategoryEntity category) {

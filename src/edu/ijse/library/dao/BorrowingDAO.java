@@ -4,6 +4,7 @@
  */
 package edu.ijse.library.dao;
 
+import edu.ijse.library.view.Borrowing;
 import java.util.List;
 
 /**

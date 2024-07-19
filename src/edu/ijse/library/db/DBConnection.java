@@ -4,9 +4,12 @@
  */
 package edu.ijse.library.db;
 
+import edu.ijse.library.dao.impl.MemberDAOImpl
+
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
+
 
 /**
  *
@@ -16,7 +19,7 @@ public class DBConnection {
     
     private static DBConnection dBConnection;
     
-    private Connection connection;
+    private final Connection connection;
     
     private DBConnection() throws ClassNotFoundException, SQLException{
         Class.forName("com.mysql.cj.jdbc.Driver");

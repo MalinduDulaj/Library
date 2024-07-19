@@ -4,7 +4,8 @@
  */
 package edu.ijse.library.dao;
 
-import java.awt.print.Book;
+
+import edu.ijse.library.view.Book;
 import java.util.List;
 
 /**
@@ -18,6 +19,7 @@ public interface BookDAO {
     List<Book> readAll();
     Book update(Book book);
     void delete(int bookId);
+    void save(int bookId);
 }
     
 
