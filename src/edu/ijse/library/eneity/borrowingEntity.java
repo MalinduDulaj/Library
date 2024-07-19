@@ -10,7 +10,7 @@ import java.util.Date;
  *
  * @author malindudulaj
  */
-public class borrowingTransactionsEntity {
+public class borrowingEntity {
     private int transactionId;
     private MemberEntity memberId;     // Assuming a many-to-one relationship
     private BookEntity bookId;   //Assuming a many-to-one relationship
@@ -19,7 +19,7 @@ public class borrowingTransactionsEntity {
     private Date returndate;
     private double fine;
 
-    public borrowingTransactionsEntity(int transactionId, MemberEntity memberId, BookEntity bookId, Date issuedate, Date duedate, Date returndate, double fine) {
+    public borrowingEntity(int transactionId, MemberEntity memberId, BookEntity bookId, Date issuedate, Date duedate, Date returndate, double fine) {
         this.transactionId = transactionId;
         this.memberId = memberId;
         this.bookId = bookId;
