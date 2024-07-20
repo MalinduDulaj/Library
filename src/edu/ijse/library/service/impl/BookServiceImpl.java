@@ -2,54 +2,55 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package edu.ijse.library.dao.impl;
+package edu.ijse.library.service.impl;
 
-import com.sun.jdi.connect.spi.Connection;
-import edu.ijse.library.dao.MemberDAO;
-import edu.ijse.library.view.Member;
+import edu.ijse.library.dao.BookDAO;
+import edu.ijse.library.service.BookService;
+import edu.ijse.library.view.Book;
 import java.util.List;
 
 /**
  *
  * @author malindudulaj
  */
-public abstract class MemberDAOImpl implements MemberDAO {
-
-    private  Connection connection;
-
-    public MemberDAOImpl(Connection connection) {
-        this.connection = connection;
-    }
-
-    @Override
-    public Member create(Member member) {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
-    }
-
-    @Override
-    public Member read(int memberId) {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
-    }
-
-    @Override
-    public List<Member> readAll() {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
-    }
-
-    @Override
-    public Member update(Member member) {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
-    }
-
-    @Override
-    public void delete(int memberId) {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
-    }
-
+public class BookServiceImpl implements BookService {
     
-    
-    
+    private final BookDAO bookDao;
+
+    public BookServiceImpl(BookDAO bookDao) {
+        this.bookDao = bookDao;
+    }
+
+    @Override
+    public List<Book> getAllBooks() {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
+
+    @Override
+    public Book getBookByIsbn(String isbn) throws ServiceException {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
+
+    @Override
+    public List<Book> searchBooks(String title, String author, String isbn) {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
+
+    @Override
+    public void updateBook(Book book) throws ServiceException {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
+
+    @Override
+    public void saveBook(Book book) throws ServiceException {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
+
+    @Override
+    public void deleteBook(String isbn) throws ServiceException {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
+
+     
 
 }
-    
-

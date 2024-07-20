@@ -20,6 +20,8 @@ public interface BookDAO {
     Book update(Book book);
     void delete(int bookId);
     void save(int bookId);
+
+    public List<Book> findAll();
 }
     
 

@@ -11,9 +11,10 @@ package edu.ijse.library.view;
 public class Borrowing extends javax.swing.JFrame {
 
     /**
-     * Creates new form Borrowing
+     * @param memberId the value of memberId
+     * @param bn the value of bn
      */
-    public Borrowing() {
+    public Borrowing(int memberId, String bn) {
         initComponents();
     }
 
@@ -174,7 +175,7 @@ public class Borrowing extends javax.swing.JFrame {
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new Borrowing().setVisible(true);
+                new Borrowing(memberId, isbn).setVisible(true);
             }
         });
     }

@@ -17,5 +17,14 @@ public interface MemberDAO {
     List<Member> readAll();
     Member update(Member member);
     void delete(int memberId);
+    void save (Member memberId);
+
+    public List<Member> findAll();
+
+    public void deleteById(int memberId);
+
+    public List<Member> searchMembers(String name, String memberId);
+
+    public Member findById(int memberId);
     
 }
